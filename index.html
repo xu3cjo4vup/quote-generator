@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,18 +9,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="card">
-        <div class="quoteText">Autumn is a second spring when every leaf is a flower.</div>
-        <div class="quoteAuthor">Albert Camus</div>
+    <div class="card" id="quote-container">
+        <div class="quote-text" id="quote"></div>
+        <div class="quote-author" id="author"></div>
         <div class="button-container">
-            <button class="tweetBtn" title = 'Tweet Me!'>
-                <span class="fab fa-twitter"></span>
-            </buttonv>
-            <button class="newQuote">New Quote</button>
+            <button class="twitter-button" id="twitter" title='Tweet Me!'>
+                <i class="fab fa-twitter"></i>
+            </button>
+            <button id="new-quote">New Quote</button>
         </div>
     </div>
+
+    <div class="loader" id="loader"></div>
+    
     <!-- script (ctrl+?) -->
-    <script src="script.js"></script> 
+    <script src="script.js"></script>
+    
 </body>
+
 </html>
